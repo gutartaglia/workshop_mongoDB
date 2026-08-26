@@ -7,21 +7,26 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class User{
 
     @Id
-    private String ID;
+    private String id;
     private String name;
     private String email;
 
     public User(){}
 
-    public User(String ID, String name, String email){
-        this.ID = ID;
+    public User(String id, String name, String email){
+        this.id = id;
         this.name = name;
         this.email = email;
     }
 
-    public String getID() {
-        return ID;
+    public String getId() {
+        return id;
     }
+
+    public void setId(String id){
+        this.id = id;
+    }
+    
     public String getName() {
         return name;
     }
@@ -39,7 +44,7 @@ public class User{
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + ((ID == null) ? 0 : ID.hashCode());
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
         return result;
     }
 
@@ -52,10 +57,10 @@ public class User{
         if (getClass() != obj.getClass())
             return false;
         User other = (User) obj;
-        if (ID == null) {
-            if (other.ID != null)
+        if (id == null) {
+            if (other.id != null)
                 return false;
-        } else if (!ID.equals(other.ID))
+        } else if (!id.equals(other.id))
             return false;
         return true;
     }
