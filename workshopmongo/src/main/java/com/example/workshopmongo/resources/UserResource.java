@@ -19,8 +19,6 @@ import com.example.workshopmongo.domain.Post;
 import com.example.workshopmongo.domain.User;
 import com.example.workshopmongo.dto.UserDTO;
 import com.example.workshopmongo.services.UserService;
-import org.springframework.web.bind.annotation.RequestParam;
-
 
 
 @RestController
