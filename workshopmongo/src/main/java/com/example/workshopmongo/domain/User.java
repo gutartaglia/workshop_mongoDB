@@ -48,11 +48,11 @@ public class User{
         this.email = email;
     }
 
-    public List<Post> gePosts(){
+    public List<Post> getPosts(){
         return posts;
     }
 
-    public void serPosts(List<Post> posts){
+    public void setPosts(List<Post> posts){
         this.posts = posts;
     }
 
